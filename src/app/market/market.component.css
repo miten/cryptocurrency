@@ -1,0 +1,21 @@
+.market {
+  background-color: #f6f6f6;
+}
+
+.search-bar {
+  height: 50px;
+  width: 100%;
+}
+
+.place {
+  padding: 3% 6% 3% 6%;
+}
+.header h2 {
+  font-family: 'Gugi', cursive;
+  font-weight: bold;
+  color: white;
+}
+
+app-coin {
+  margin: 1%;
+}

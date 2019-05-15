@@ -1,0 +1,65 @@
+.coin {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin: 5%;
+}
+
+.coin p {
+  font-family: 'Gugi', cursive;
+  font-weight: bold;
+}
+
+
+@-webkit-keyframes RED-FADE {
+  0%   { background-color: #f44336; }
+  100% { background-color: transparent; }
+}
+@-moz-keyframes RED-FADE {
+  0%   { background-color: #f44336; }
+  100% { background-color: transparent; }
+}
+@-o-keyframes RED-FADE {
+  0%   { background-color: #f44336; }
+  100% { background-color: transparent; }
+}
+@keyframes RED-FADE {
+  0%   { background-color: #f44336; }
+  100% { background-color: transparent; }
+}
+
+@-webkit-keyframes GREEN-FADE {
+  0%   { background-color: #8bc34a; }
+  100% { background-color: transparent; }
+}
+@-moz-keyframes GREEN-FADE {
+  0%   { background-color: #8bc34a; }
+  100% { background-color: transparent; }
+}
+@-o-keyframes GREEN-FADE {
+  0%   { background-color: #8bc34a; }
+  100% { background-color: transparent; }
+}
+@keyframes GREEN-FADE {
+  0%   { background-color: #8bc34a; }
+  100% { background-color: transparent; }
+}
+
+.up {
+  -webkit-animation: GREEN-FADE 1s ;
+  -moz-animation:    GREEN-FADE 1s ;
+  -o-animation:      GREEN-FADE 1s ;
+  animation:         GREEN-FADE 1s ;
+}
+
+.down {
+  -webkit-animation: RED-FADE 1s ;
+  -moz-animation:    RED-FADE 1s ;
+  -o-animation:      RED-FADE 1s ;
+  animation:         RED-FADE 1s ;
+}
+
+.coin_logo {
+  height: 30px;
+  width: 30px;
+}

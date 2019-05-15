@@ -1,0 +1,10 @@
+<div class="header" fxLayout="row" fxLayoutAlign="center center">
+  <h2>$ Market $</h2>
+</div>
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+<router-outlet>
+  <div style="height: 100vh" fxLayout="column" fxLayoutAlign="center center" *ngIf="loading">
+    <mat-spinner diameter="100"></mat-spinner>
+    <p>Loading, please wait ...</p>
+  </div>
+</router-outlet>

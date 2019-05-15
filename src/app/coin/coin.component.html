@@ -1,0 +1,13 @@
+<mat-card *ngIf="coin$ | async as coin$ else loading" [class.up]="coin$.up" [class.down]="coin$.down" class="coin" fxLayout="column" fxLayoutAlign="center center">
+  <p>{{coin$.name}}</p>
+  <p>{{coin$.price | currency}}</p>
+  <img class="coin_logo" [src]="coin.img">
+</mat-card>
+
+<ng-template #loading>
+  <mat-card class="coin" fxLayout="column" fxLayoutAlign="center center">
+    <p>{{coin.name}}</p>
+    <p>{{coin.price | currency}}</p>
+    <img class="coin_logo" [src]="coin.img">
+  </mat-card>
+</ng-template>

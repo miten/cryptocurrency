@@ -1,0 +1,12 @@
+<div class="market" fxLayout="column">
+  <div class="search-bar" fxLayoutAlign="center none"  fxLayout="row">
+    <mat-form-field appearance="legacy">
+      <mat-label>Filter coin</mat-label>
+      <input matInput type="text" [(ngModel)]="searchText">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="place" fxLayout="row wrap">
+    <app-coin [id]="coin" *ngFor="let coin of coins | filter : searchText"></app-coin>
+  </div>
+</div>
